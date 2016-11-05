@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Student Name: Mhatre,Pushpak Arun
+     Project name:Project 2 (Web Mashup: Display House Address on a Map with Weather details)  
+	 Due date:October 26,2016
+     Student id-1001439236
+	 -->
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display Address with Weather Details</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="webmash.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyBxa15-2nUopHTiC9lQnhKcV0hm1s628G0&callback=initMap " type="text/javascript"></script>
+		
+  </head>
+  <body onload="initialize();">
+    <div id="map" style="width: 600px; height: 500px;"></div>
+	
+	<h2 style="color:blue ;position:absolute;
+    left:700px;top:0px;">Your VISITS : </h2>
+	<textarea id="details" rows="30" cols="68" style="block:inline;	position: absolute;
+    left:700px;
+    top: 55px;">
+	</textarea>
+	
+	
+	<p>
+	<input type="button" value="Clear" onclick=eraseText();  style="width:200px;height:50px;position: absolute;
+    left:900px;
+    top: 540px;">
+	</p>
+	
+    <div id="output">&nbsp;</div>
+  </body>
+</html>
+
